@@ -36,7 +36,7 @@ if [ -d "$NVIM_CONFIG" ]; then
   mv "$NVIM_CONFIG" "$HOME/.config/nvim.bak"
 fi
 
-git clone git@github.com:Dr00pyd00/NeoVim-Setup.git "$NVIM_CONFIG"
+git clone https://github.com/Dr00pyd00/NeoVim-Setup.git "$NVIM_CONFIG"
 
 # --- Installation des plugins ---
 echo ">>> Installation des plugins lazy.nvim..."
