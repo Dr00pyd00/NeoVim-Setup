@@ -1,14 +1,14 @@
 
 return {
   {
-    "Mofiqul/dracula.nvim",
+    "Mofiqul/dracula.nvim"  },
+  { "folke/tokyonight.nvim" },
+  { "rebelot/kanagawa.nvim" ,
     priority = 1000,
     config = function()
-      vim.cmd("colorscheme dracula")
+      vim.cmd("colorscheme kanagawa-wave")
     end,
-  },
-  { "folke/tokyonight.nvim" },
-  { "rebelot/kanagawa.nvim" },
+},
   { "rose-pine/neovim", name = "rose-pine" },
   { "catppuccin/nvim", name = "catppuccin" },
   { "ellisonleao/gruvbox.nvim" },
