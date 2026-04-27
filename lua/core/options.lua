@@ -13,3 +13,4 @@ vim.opt.termguicolors = true   -- couleurs 24 bits
 vim.opt.scrolloff = 8          -- garde 8 lignes visibles au dessus/dessous du curseur
 vim.g.mapleader = " "
 
+
