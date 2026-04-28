@@ -1,5 +1,3 @@
-vim.lsp.enable("pyright")
-
 return {
   {
     "williamboman/mason.nvim",
@@ -16,5 +14,28 @@ return {
       })
     end,
   },
-}
+  {
+    "neovim/nvim-lspconfig",
+    dependencies = {
+      "williamboman/mason-lspconfig.nvim",
+      "hrsh7th/cmp-nvim-lsp",
+    },
+    config = function()
+      local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
+      vim.lsp.config("pyright", {
+        capabilities = capabilities,
+        settings = {
+          python = {
+            analysis = {
+              autoSearchPaths = true,
+              useLibraryCodeForTypes = true,
+            },
+          },
+        },
+      })
+
+      vim.lsp.enable("pyright")
+    end,
+  },
+}

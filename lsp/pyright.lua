@@ -1,3 +1,5 @@
+
+
 return {
   cmd = { "pyright-langserver", "--stdio" },
   filetypes = { "python" },
@@ -7,8 +9,8 @@ return {
       analysis = {
         autoSearchPaths = true,
         useLibraryCodeForTypes = true,
+        semanticTokens = true,
       },
     },
   },
 }
-
