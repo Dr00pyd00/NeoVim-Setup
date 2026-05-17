@@ -36,6 +36,10 @@ return {
       })
 
       vim.lsp.enable("pyright")
+     vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "Go to definition" })
+     vim.keymap.set("n", "gD", vim.lsp.buf.declaration, { desc = "Go to declaration" })
+     vim.keymap.set("n", "K", vim.lsp.buf.hover, { desc = "Hover documentation" })
     end,
   },
 }
+
